@@ -30,12 +30,12 @@ Open your Julia REPL (terminal) and run the following commands:
 using Pkg
 Pkg.add("Flux")
 Pkg.add("BSON")
-**### Step 2: Verify the Image Tensor**
+### Step 2: Verify the Image Tensor
 The preprocessed image tensor (preprocessed_image_1.bson) was originally created in PyTorch and then converted to BSON format for compatibility with Julia.
 Ensure the file exists in your directory.
 
-**File Descriptions**
-1. model.jl
+## File Descriptions
+### 1. model.jl
 This is the main Julia script responsible for:
 
 ✅ Loading the preprocessed image tensor (preprocessed_image_1.bson).
@@ -82,17 +82,18 @@ else
 end
 
 
-**How to Run the Project**
+## How to Run the Project
 Follow these steps to run the project:
 
-✅ Step 1: Open Julia REPL
+### Step 1: Open Julia REPL
 Open your terminal or Julia and navigate to your project folder:
 cd C:/Users/HP/Desktop/Flux project
-Step 2: Run the Julia Script
+
+### Step 2: Run the Julia Script
 Inside the terminal (Julia REPL), run the script using:
 include("model.jl")
 
-Step 3: Expected Output
+### Step 3: Expected Output
 If the model runs successfully, you should see an output like this:
 Loading the image tensor...
 Creating the CNN model...
@@ -100,7 +101,7 @@ Performing the forward pass...
 Prediction: 🏙️ Futuristic City
 
 
-**Future Work**
+## Future Work
 Here are a few ways you can extend this project:
 
 ✅ Train the CNN model on a custom dataset.
@@ -108,7 +109,7 @@ Here are a few ways you can extend this project:
 ✅ Save and load trained models using BSON.
 ✅ Convert the model to ONNX or TorchScript.
 
-**Final Note**
+## Final Note
 This project is designed as a beginner-level Flux.jl project.
 You can extend it by:
 
